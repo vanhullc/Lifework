@@ -2,13 +2,16 @@
 $servername = "localhost";
 $username = "root";
 $password = "password";
+$db = "lifework";
 
 // Create connection
-$conn = new mysqli($servername, $username);
+$mysqli = new mysqli($servername, $username);
+$conn = mysqli_connect($servername, $username);
+mysqli_select_db($conn, $db);
 
 // Check connection
-if ($conn->connect_error) {
+if ($mysqli->connect_error) {
    die("Connection failed: " . $conn->connect_error);
-}
-// echo "Connected successfully";
+   echo ("not connected");
+};
 ?>

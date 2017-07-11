@@ -33,5 +33,8 @@ class Profile{
   public function addLink($_link){
     $links += $_link;
   }
-}
+  public function toString(){
+    return "My name is " + $name;
+  }
+};
 ?>

@@ -1,6 +1,5 @@
 <?php
   session_start();
-  require_once('mySql/connect.php');
 ?>
 <!DOCTYPE html>
   <html>
@@ -10,7 +9,12 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+      <!-- import for profile css -->
+      <link type="text/css" rel="stylesheet" href="css/profile.css"  media="screen,projection"/>
+      <!-- import for vertical timeline -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+      <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    	<script src="js/modernizr.js"></script> <!-- Modernizr -->
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
     </head>

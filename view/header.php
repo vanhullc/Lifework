@@ -2,7 +2,7 @@
 
       <nav class="red darken-4" id="navbar">
         <div class="nav-wrapper container" role="navigation">
-          <p id="logo-container" class="brand-logo left" style="margin-top: 0px">Lifework</p>
+          <p id="logo-container" class="brand-logo left" style="margin-top: 10px">Lifework</p>
           <ul id="nav-mobile" class="right">
             <form>
               <div class="input-field col-s2">
