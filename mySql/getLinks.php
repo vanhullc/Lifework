@@ -4,7 +4,8 @@
 
   require_once('connect.php');
 
-  $query = "SELECT * FROM profile WHERE id=" . $iD;
+  $query = "SELECT * FROM links JOIN linkstoprofile WHERE links.iD = linkstoprofile.idLink AND linkstoprofile.idProfile=" . $iD;
+  $query .= " ORDER BY Date DESC";
 
   if($result = mysqli_query($conn, $query)) {
     $to_encode = array();
