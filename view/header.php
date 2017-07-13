@@ -4,7 +4,7 @@
         <div class="nav-wrapper container" role="navigation">
           <p id="logo-container" class="brand-logo left" style="margin-top: 10px">Lifework</p>
           <ul id="nav-mobile" class="right">
-            <form id="search">
+            <form id="searchForm">
               <div class="input-field col-s2">
                 <input id="search" type="search" required/>
                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>

@@ -1,7 +1,9 @@
 <?php
     require_once('connect.php');
 
-    if($result = mysqli_query($conn, "SELECT * FROM PROFILE ORDER BY RAND() LIMIT 25")) {
+    $search = $_GET["search"];
+
+    if($result = mysqli_query($conn, "SELECT * FROM PROFILE WHERE Name LIKE '%" . $search . "%' LIMIT 25")) {
       $to_encode = array();
       while($row = mysqli_fetch_assoc($result)) {
         $to_encode[] = $row;
@@ -11,6 +13,7 @@
     else {
       echo("error");
       echo(mysqli_error($conn));
+      alert('error');
     }
     /*
     echo($result);

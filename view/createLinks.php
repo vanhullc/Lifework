@@ -1,3 +1,7 @@
+<?php
+  $iD = $_POST["iD"];
+ ?>
+
 <script type="text/javascript" src="ajax/createLinks.js"></script>
 
 <div class="wrapper container" role="content" id="home">
@@ -8,7 +12,7 @@
         <div class="row">
           <form class="col s12" id="accountForm" method="post">
             <div class="row">
-              <h1 style="center">New Link</h1>
+              <h1 style="center" class="iD" id="<?php echo $iD ?>">New Link</h1>
             </div>
             <div class="row">
               <div class="input-field col s12">
@@ -18,8 +22,8 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="Link" type="text" class="validate" required>
-                <label for="Link">Link</label>
+                <input id="Uri" type="text" class="validate" required>
+                <label for="Uri">Link</label>
               </div>
             </div>
             <div class="row">
@@ -29,7 +33,7 @@
               </div>
             </div>
 
-            <button class="btn red darken-4 waves-effect waves-light" type="submit" name="action">Create
+            <button class="btn red darken-4 waves-effect waves-light" type="submit" id="linksButton" name="action">Create
              <i class="material-icons right">send</i>
            </button>
           </form>
